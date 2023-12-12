@@ -28,6 +28,7 @@ let
       PREEMPT_VOLUNTARY = lib.mkForce no; # PREEMPT_RT deselects it.
       RT_GROUP_SCHED = lib.mkForce (option no); # Removed by sched-disable-rt-group-sched-on-rt.patch.
       LATENCYTOP = yes;
+      SCHEDSTATS = no;
     };
 
 in
